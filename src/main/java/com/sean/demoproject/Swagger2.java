@@ -28,7 +28,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("Spring Boot中使用Swagger2构建RESTful APIs")
                 .description("Spring Boot中使用Swagger2构建RESTful APIs")
-                .termsOfServiceUrl("http://blog.didispace.com/")
+                .termsOfServiceUrl("")
                 .contact("")
                 .version("1.0")
                 .build();
