@@ -12,7 +12,15 @@ import java.util.List;
 @Service
 public class UserService {
 
+    public MongoTemplate getMongoTemplate() {
+        return mongoTemplate;
+    }
+
     @Autowired
+    public void setMongoTemplate(MongoTemplate mongoTemplate) {
+        this.mongoTemplate = mongoTemplate;
+    }
+
     private MongoTemplate mongoTemplate;
 
 

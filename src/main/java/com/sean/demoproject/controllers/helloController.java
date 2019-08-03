@@ -21,7 +21,15 @@ public class helloController {
     private Logger logger = LoggerFactory.getLogger(helloController.class);
     private AtomicLong nextId = new AtomicLong();
 
+    public UserService getUserService() {
+        return userService;
+    }
+
     @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
     private UserService userService;
     @ApiOperation(value = "Hello")
     @GetMapping("/hello")
